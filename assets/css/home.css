@@ -11,10 +11,22 @@ body {
   margin: 20px;
 }
 
+.habit-values-container {
+  overflow: hidden;
+  width: 200px;
+  text-align: center;
+}
+
 .habit-title {
   color: white;
   font-weight: bold;
   font-size: 20px;
+}
+
+.habit-unit {
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
 }
 
 .card {

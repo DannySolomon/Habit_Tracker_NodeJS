@@ -7,7 +7,10 @@
   <body>
     <%- include('./partials/_navbar.ejs') %> <% for(let j =0 ; j < habits.length; j++){ %>
     <div class="habit-container">
-      <h2 class="habit-title"><%= habits[j].name %></h2>
+      <div class="habit-values-container">
+        <h2 class="habit-title"><%= habits[j].name %></h2>
+        <h3 class="habit-unit"><%= habits[j].unit_value %> <%= habits[j].unit %></h3>
+      </div>
       <% for(let i = 0; i < 7; i++){ %>
       <a href="/change/?habit_id=<%= habits[j].id %>&dailyHabit=<%= completed[j][i].id %>">
         <% if(completed[j][i].completed == "None") {%>
